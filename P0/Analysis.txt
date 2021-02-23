@@ -1,0 +1,25 @@
+Task 0:
+    We simply index into the first and last rows of lists
+    [ O(1) ]
+
+Task 1:
+    We have two lists of lengths n and m respectively and we loop through their combined lengths
+    This reduces down to [ O(n) ]
+
+Task 2:
+    We go through each call in the calls list and append the total seconds for the two callers
+    We then call a max function at the end to get the longest time spent by a single user
+    This reduces down to [ O(2n) or O(n) ]
+
+Task 3:
+    We loop through the calls list once for both parts A and B
+    We append values where conditions are satisfied, checking each row only once
+    We perform a sorted on the area codes set
+    We perform a division mathematical operation
+    This reduces down to [ O(n + nlogn + 1) or O(nlogn) ]
+
+Task 4:
+    We loop through two lists of lengths n and m repsectively and we add each caller to one of two sets
+    We then take the set differentiation of the two sets
+    Lastly, we run sorted on the final set 
+    This reduces down to [ O(n + 1 + nlogn) or O(nlogn) ]
